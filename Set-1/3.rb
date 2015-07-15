@@ -16,7 +16,7 @@ def decrypt s
     begin
       str = e.encode('utf-8')
       if str =~ /^([[:alnum:]]|[[:blank:]]|[[:punct:]])*$/
-        puts str
+        str
       end
     rescue Exception => e
     end
