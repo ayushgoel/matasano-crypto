@@ -4,6 +4,7 @@ def treatAsHex s
   [s].pack('H*').unpack('B*').last.to_i 2
 end
 
+public
 def xor(str1, str2)
   h1 = treatAsHex str1
   h2 = treatAsHex str2
